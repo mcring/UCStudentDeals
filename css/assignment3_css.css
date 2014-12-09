@@ -1,0 +1,262 @@
+/* JAMES WALRATH // website by  */
+
+/* theme notes
+COLOR1:#FFA400 // light brown
+COLOR2:#B27300 // dark brown
+COLOR3:#0076FF // light blue
+COLOR4:#0052B2 // dark blue
+COLOR5:#333333 // dark
+FONT1: Exo
+FONT2: CF Spaceship Regular
+*/
+
+/* css imports */
+@import url(lightbox.css);
+
+/* fonts imports */
+@import url('../assets/fonts/cfspaceship/stylesheet.css'); /* 'cfspaceship' */
+@import url('../assets/fonts/exo/exo-black/stylesheet.css'); /* 'exoblack' */
+@import url('../assets/fonts/exo/exo-regular/stylesheet.css'); /* 'exoregular' */
+@import url('../assets/fonts/exo/exo-thin/stylesheet.css'); /* 'exothin' */
+
+/* housekeeping */
+* {
+	box-sizing:border-box !important;
+}
+body {
+	font-family:"exoregular";
+}
+p {
+	font-family:"exoregular";
+	font-size:1.1rem;
+	line-height:1.4rem;
+	margin:1rem 0;
+	max-width:600px;
+	text-indent:50px;
+}
+h1 {
+	font-family:"exoblack";
+	font-size:4rem;
+	color:#333333;
+}
+h2 {
+	font-family:"exoblack";
+	font-size:2.4rem;
+	color:#333333;
+}
+h3 {
+	font-family:"exoregular";
+	font-size:1.3rem;
+	line-height:1.8rem;
+	color:#000000;
+}
+h4 {
+	padding:5px 0;
+}
+a {
+	text-decoration:none;
+	color:#B27300;
+	font-size:1rem;
+}
+a:hover {
+	color:#0052B2;
+	transition:0.5s;
+}
+body>header>a { color:#fff }
+.light {
+	color:#fff;
+}
+.brown {
+	color:#B27300;
+}
+
+/* wrap */
+.wrap {
+	margin:0 auto;
+	width:1000px;
+	max-width:1000px;
+}
+/* page setup */
+body>header {
+	position:fixed;
+	top:0px;
+	height:120px;
+	width:100%;
+	padding:14px 0;
+	background-color:#FFA400;
+	z-index:2;
+}
+body>footer {
+	position:fixed;
+	bottom:0px;
+	height:80px;
+	width:100%;
+	background:#fff;
+	border-top:1px #ccc solid;
+	z-index:1;
+}
+.whitebg {
+	background:#fff;
+	padding:80px;
+	box-shadow:0 0 10px #ccc;
+}
+.main {
+	margin-bottom:140px;
+}
+/* header */
+.brand {
+	float:left;
+	width:500px;
+}
+.topNav {
+	float:right;
+	width:auto;
+}
+/* navigation basics */
+nav {
+	width:100%;
+	list-style:none;
+}
+nav li {
+	float:left;
+	padding:10px;
+	color:#fff;
+	background:#B27300;
+	text-decoration:none;
+	font-family:"cfspaceship";
+	font-size:1.0rem;
+	letter-spacing:2px;
+}
+nav li:hover {
+	color:#333333;
+	transition:0.5s;
+	background:#fff;
+}
+/* topic navigation */
+.topicNav {
+	margin-top:120px;
+	height:40px;
+}
+.topicNav ul { height:100%; }
+.topicNav li {
+	display:block;
+	width:10%;
+	text-align:center;
+	height:100%;
+}
+.topicNav a {
+	display:block;
+	position: relative;
+	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	font-size:0.70rem;
+}
+.topicNav a, .topNav a {
+	color:#fff;
+	padding-bottom:5px;
+}
+.active {
+	border-bottom:3px #fff solid !important;
+}
+.topicNav li:hover a, .topNav li:hover a {
+	color:#000;
+}
+
+/* footer */
+footer section {
+	float:left;
+	height:100%;
+	padding:20px 0;
+}
+.copyright {
+	width:400px;
+}
+.footerLinks {
+	float:right;
+}
+.footerLinks nav li a {
+	font-size:0.8rem;
+	padding:5px 10px;
+	color:#0052B2;
+}
+.footerLinks nav li {
+	background:none;
+	padding:0;
+}
+.footerLinks li:hover a {
+	color:#fff;
+	background:#0076FF;
+}
+/* front page */
+html { 
+  background: url(../assets/images/frontbg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}	
+.wideTitle {
+	width:100%;
+	height:auto;
+	margin-top:30%;
+	text-align:center;
+}
+.buttonLarge {
+	margin:40px auto;
+}
+.buttonLarge a {
+	font-size:2rem;
+	color:#ccc;
+	background:#fff;
+	padding:20px;
+	width:150px;
+	box-shadow: 1px 2px 7px #888888;
+	border-radius:10px;
+	text-align:center;
+}
+.buttonLarge:hover a {
+	color:#fff;
+	background:#FFA400;
+	transition:0.3s;
+}
+/* main area stuff */
+.topicIntro {
+	text-align:center;
+}
+.topicIntro h3 {
+	color:#0076FF;
+	font-family:"exothin";
+}
+.topicIntro p {
+	margin-left:auto;
+	margin-right:auto;
+}
+.topicMain div a:nth-child(odd) img {
+	height:150px;
+	width:250px;
+	
+}
+.topicImages {
+	width:250px;
+}
+.topicMain>div>div {
+	margin:30px 0;
+	min-height:150px;
+	width:100%;
+}
+.topicMain>div>div>a:nth-child(odd) {
+	display:block;
+	float:right;
+}
+/* contact setup */
+.emailLarge {
+	width:50%;
+	height:auto;
+	background:#fff;
+	text-align:center;
+	margin:20px auto;
+	box-shadow:0 0 10px #ccc;
+	padding:20px 20px;
+}
