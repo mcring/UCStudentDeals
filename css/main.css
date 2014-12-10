@@ -405,7 +405,7 @@ nav ul li:hover > ul {
 
 }
 
-.postFooter img{
+.postFooter img, .comment img{
 	height: 50px;
 	width: 50px;
 	float:left;
@@ -437,6 +437,20 @@ nav ul li:hover > ul {
 
 .alignright {
 	float:right;
+}
+
+.commentSection {
+	background-color: rgba(255,255,255,0.3);
+}
+
+.commentP {
+	font-family:"exoregular";
+	font-size:0.9rem;
+	line-height: 70%;
+}
+
+.comment div{
+	padding-left: 1px;
 }
 
 /*
@@ -552,6 +566,11 @@ article a:hover {
 	color:#000000;
 }
 
+.date {
+	color: gray;
+	font-size:0.9rem;
+}
+
 .postTitle {
 	font-family:"exoregular";
 	font-size:2.5rem;
@@ -592,7 +611,7 @@ article a:hover {
 }
 
 
-#detailsP {
+.detailsP {
 	font-family:"exoregular";
 	font-size:0.9rem;
 	line-height:1.4rem;
