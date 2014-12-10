@@ -431,6 +431,13 @@ nav ul li:hover > ul {
 	background-color: yellow;
 }
 
+.alignleft {
+	float:left;
+}
+
+.alignright {
+	float:right;
+}
 
 /*
  * All use the shadowed box effect with slightly different dimensions
