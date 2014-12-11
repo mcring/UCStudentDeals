@@ -74,8 +74,6 @@
 				</li>
 				<li><a href="SellerPage1.html">Looking To Sell?</a>
 				</li>
-				<li><a href="#">Looking to Trade?</a>
-				</li>
 			</ul></nav>
 	</section>
 
@@ -84,37 +82,35 @@
 			<div class="contentInner">	
 				<div class="postCreator">
 					
-					<a href = "javascript:history.back()" align="right">Back to Textbooks</a>
-
-					<p id="postTitle">Essentials of Genetics, 8th ed.</p>						
+					<div>
+						<a href = "javascript:history.back()" class = "alignleft">Back to Textbooks</a>
+						<a href = "#" class="alignright">Save</a>
+					</div>
+					<br>
+                    <ul>
+						<li>
+							<a class="fb" href="assets/images/Books/genetics.jpg">
+								<img class="categoryPicSmall pull-right" src="assets/images/Books/genetics.jpg" alt="assets/images/Books/BooksCategory.jpg" />
+							</a>
+						</li>
+					</ul>	
+					<p class="postTitle">Essentials of Genetics, 8th ed.</p>						
 					<p class="priceSmall"><span id="spanGreen"> $75 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+                    
+                    <p class="postHead">Posted on: <span class = "date">December 9, 2014</span></p>
+					<p class="detailsP"> 8th edition. In used condition.</p>
 
 					<!-- Buttons -->
 					<input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Message">
-					<input class="actionButton" id="tagButton" type="button" onclick="toggle_visibility('tagDiv')" value="Tag a Friend">
-					<input class="actionButton" id="saveButton" type="button" onclick="" value="Save">
 					<br>
 					<br>
 
 					<!-- Message box that shows on button click -->
 					<div id="messageDiv">
 						<textarea id="messageTextArea" placeholder="Enter bid, question, or comment here..."></textarea><br>
-						<input type="button" class="actionButton" id="messageButton" value="Send Message" onclick="location.href='PostMainPage.html'">
+						<input type="button" class="actionButton" id="messageButton" value="Send Message" onclick="location.href='TextbookPost8.html'">
 					</div>
-					<div id="tagDiv">
-						<textarea id="messageTextArea" placeholder="To tag friends message '@friend1 @friend etc."></textarea><br>
-						<input type="button" class="actionButton" id="tagButton" value="Send Tag(s)" onclick="location.href='PostMainPage.html'">
-					</div>
-					<br>
-					<ul>
-						<li>
-							<a class="fb" href="assets/images/Books/genetics.jpg">
-								<img class="categoryPicSmall" src="assets/images/Books/genetics.jpg" alt="assets/images/Books/BooksCategory.jpg" />
-							</a>
-						</li>
-					</ul>				
-					<p class="postHead">Details</p>
-					<p id="detailsP"> 8th edition. In used condition.</p>
+					<br>			
 				</div>	
 			</div>
 		</div>
