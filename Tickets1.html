@@ -50,17 +50,17 @@
 				</li>
 			</ul></nav>
 	</section>
-
+    
 	<section class="results">
 		<div class="r">
 			<header>
 				<!-- Sort By Selector -->
 				<div class="sortByDiv">
 					<h2 class="sortByH">Sort By:  </h2>
-					<select class="sortBySelector">
-  						<option>Price: Low to High</option>
-  						<option>Price: High To Low</option>
-  						<option>Title: A-Z</option>
+					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
+  						<option value="Tickets1.html">Price: Low to High</option>
+  						<option value="Tickets2.html">Price: High To Low</option>
+  						<option value="Tickets3.html">Title: A-Z</option>
 					</select>
 				</div>
 				<div class="searchAndPageDiv">
@@ -87,7 +87,25 @@
 
 			<div class="contentInner">
 			
+            <a class="postLink" href="TicketsPost3.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i12.jpg" alt="" />
 
+						<div class="postHeader"> 
+							<h3>RL Grime 2 tickets</h3>
+							<p class="priceSmall"><span id="spanGreen"> $20 each</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">Don't miss out on the Void tour!</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p15.jpg" alt="" />
+							<h4>Jenn Kim</h4>
+						</div>
+					
+					</article>
+				</a>
+                
+                
 				<a class="postLink" href="TicketsPost1.html">
 					<article class="smallPost">
 						<img class="postPicSmall" src="assets/images/i11.jpg" alt="" />
@@ -119,25 +137,6 @@
 						<div class="postFooter"> 
 							<img class="profilePicSmall" src="assets/images/p14.jpg" alt="" />
 							<h4>April De Alday</h4>
-						</div>
-					
-					</article>
-				</a>
-
-
-				<a class="postLink" href="TicketsPost3.html">
-					<article class="smallPost">
-						<img class="postPicSmall" src="assets/images/i12.jpg" alt="" />
-
-						<div class="postHeader"> 
-							<h3>RL Grime 2 tickets</h3>
-							<p class="priceSmall"><span id="spanGreen"> $20 each</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
-						</div>
-						<hr>
-						<p class="descriptionSmall">Don't miss out on the Void tour!</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="assets/images/p15.jpg" alt="" />
-							<h4>Jenn Kim</h4>
 						</div>
 					
 					</article>
