@@ -2,8 +2,8 @@
 <html lang="en">
   <head> 
     <meta charset="utf-8">
-    <title>Usability Evaluation</title>
-    <meta name="author" content="Gian Costa, Megan Ring, and Andy">
+    <title>UC Student Details</title>
+    <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
 
     <!-- Base Stylsheets -->
     <link rel="stylesheet" href="css/reset.css" >
@@ -18,14 +18,22 @@
     <!-- HEADER -->
 
 	<header>
-		<section class="head">		
-				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
-				</a>
-				<div>
-					<p id="siteTitle"> UCSD Site Title</p>
-					<p id="siteBlurb"> Insert site blurb here</p>	
+		<section class="head">
+
+		        <div class="siteLogoName">		
+					<a class="logoLink" href="index.html">
+						<img class="logo" src="assets/images/money.png" alt"">
+						</img>
+					</a>
+					<div class="siteName">
+						<p id="siteTitle"> UCSD Site Title</p>
+					</div>
+				</div>
+					
+				<div class="headerButtonsDiv">
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-bell-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-envelope-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-user fa-2x"></i></span></a></div>
 				</div>
 		</section>
     </header>
@@ -42,8 +50,6 @@
 				</li>
 				<li><a href="SellerPage1.html">Looking To Sell?</a>
 				</li>
-				<li><a href="#">Looking to Trade?</a>
-				</li>
 			</ul></nav>
 	</section>
 
@@ -53,10 +59,10 @@
 				<!-- Sort By Selector -->
 				<div class="sortByDiv">
 					<h2 class="sortByH">Sort By:  </h2>
-					<select class="sortBySelector">
-  						<option>Price: Low to High</option>
-  						<option>Price: High To Low</option>
-  						<option></option>
+					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
+  						<option value="Textbooks1.html">Price: Low to High</option>
+  						<option value="Textbooks2.html">Price: High To Low</option>
+  						<option value="Textbooks3.html">Title: A-Z</option>
 					</select>
 				</div>
 				<div class="searchAndPageDiv">
@@ -65,9 +71,9 @@
 						<h2 class="pageH">Page:</h2>
 						<ul>
 							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
+							<!--<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
-							<li><a href="#">>></a></li>
+							<li><a href="#">>></a></li>-->
 						</ul>
 					</div>
 
@@ -86,38 +92,35 @@
 
 				<a class="postLink" href="FurniturePost1.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i14.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Ikea Coffee Table</h3>
+							<p class="priceSmall"><span id="spanGreen"> $20 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people. </p>
+						<p class="descriptionSmall"> used for one quarter still in good condition</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p14.jpg" alt="" />
+							<h4>April De Alday</h4>
 						</div>
 					
 					</article>
 				</a>
 
-
 				<a class="postLink" href="FurniturePost2.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i15.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Fancy Frat chair</h3>
+							<p class="priceSmall"><span id="spanGreen"> $45 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
+						<p class="descriptionSmall"> plus 20 frat points if bought, still in good condion</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p16.jpg" alt="" />
+							<h4>Matt Lurie</h4>
 						</div>
 					
 					</article>
@@ -126,62 +129,40 @@
 
 				<a class="postLink" href="FurniturePost3.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i16.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Lamp</h3>
+							<p class="priceSmall"><span id="spanGreen"> $15 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
+						<p class="descriptionSmall">from target, only used for a quarter, bought for $25</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p12.jpg" alt="" />
+							<h4>Azze Ngo</h4>
 						</div>
 					
 					</article>
 				</a>
-
 
 				<a class="postLink" href="FurniturePost4.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i17.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Purple beanbag
+</h3>
+							<p class="priceSmall"><span id="spanGreen"> $15 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Like New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
+						<p class="descriptionSmall">small but super comfy beanbag chair, light purple from target, great condition</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p18.jpg" alt="" />
+							<h4>Lauren Annamarie Roberts </h4>
 						</div>
 					
 					</article>
 				</a>
-
-				<a class="postLink" href="FurniturePost5.html">
-					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
-
-						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
-						</div>
-						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
-						</div>
-					
-					</article>
-				</a>
-
 			</div>
 		</div>
 	</section>
