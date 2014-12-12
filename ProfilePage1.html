@@ -10,22 +10,32 @@
 	<link rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
-	
     <!--  jQuery -->
     <script src="js/jquery-2.1.1.min.js"></script>
   </head>
   <body>
+
+  	
+    
     <!-- HEADER -->
 
 	<header>
-		<section class="head">		
-				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
-				</a>
-				<div>
-					<p id="siteTitle"> UCSD Site Title</p>
-					<p id="siteBlurb"> Insert site blurb here</p>	
+		<section class="head">
+
+		        <div class="siteLogoName">		
+					<a class="logoLink" href="index.html">
+						<img class="logo" src="assets/images/money.png" alt"">
+						</img>
+					</a>
+					<div class="siteName">
+						<p id="siteTitle"> UCSD Site Title</p>
+					</div>
+				</div>
+					
+				<div class="headerButtonsDiv">
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-bell-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-envelope-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-user fa-2x"></i></span></a></div>
 				</div>
 		</section>
     </header>
@@ -36,7 +46,7 @@
 			<nav><ul>
 				<li><a href="index.html">Home</a>
 				</li>
-				<li><a href="ProfilePage1.html">Profile</a>
+				<li><a href="/_wireframes/home.html">Profile</a>
 				</li>
 				<li><a href="index.html">Looking To Buy?</a>
 				</li>
@@ -45,18 +55,191 @@
 			</ul></nav>
 	</section>
 
+	
+
 	<section class="results">
 		<div class="r">
+			<header class="profileHeader">
+				<p class="profileName">Megan Ring</p>
+				<img class="profilePicBig" src="assets/images/p5.jpg">
+				<div class="profileButtonsDiv">
+					<p class="buysBadge"> <span class="buysSpan">5</span>Buys</p>
+					<p class="sellsBadge"> <span class="sellsSpan">4</span>Sells</p>
+				</div>
+				<a href="#skipToYourPostings">Your Postings&nbsp;>>&nbsp;&nbsp;</a>
+				<a href="#skipToYourSavedItems">Your Saved Items&nbsp;>></a >
+			</header>
+
+			
+
+            <a name="skipToYourPostings" id="skipToYourPostings"></a><!-- SKIP LINK ANCHOR -->
+            <p class="postingsLabel">Your Postings</p>
 			<div class="contentInner">
 			
-				<img class = "img-circle" src = "https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10463884_834196076591570_8840423780749906532_n.jpg?oh=1dff9369b56a699cf6132feeaa52fc16&oe=554776BE&__gda__=1426618760_f1d8b95ee2319cfe3ef7848ec3881b68" id = "" alt = ""/>
 
+				<a class="postLink" href="TextbookPost6.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/calculus.jpg" alt="" />
 
+						<div class="postHeader"> 
+							<h3>Calculus: Early Transcendentals </h3>
+							<p class="priceSmall">$60</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Jon Rogawski. Like New. </p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="PostMainPage.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/copernican_rev.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>The Copernican Revolution</h3>
+							<p class="priceSmall">$17</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Thomas Kuhn. New. </p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/Books/tarika.jpg" alt="" />
+							<h4>Tarika Soni</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="TextbookPost5.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/cse100.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Data Structures & Algorithms in C++</h3>
+							<p class="priceSmall">$55</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Drozdek. For CSE 100. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
+				<a class="postLink" href="TextbookPost5.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/cse100.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Data Structures & Algorithms in C++</h3>
+							<p class="priceSmall">$55</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Drozdek. For CSE 100. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
 
 			</div>
-		</div>
-	</section>
+		
+     
+			<a name="skipToYourSavedItems" id="skipToYourSavedItems"></a> <!-- SKIP LINK ANCHOR -->
+			<p class="postingsLabel">Your Saved Items</p>
+			<div class="contentInner">
+			
 
+				<a class="postLink" href="TextbookPost6.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/calculus.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Calculus: Early Transcendentals </h3>
+							<p class="priceSmall">$60</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Jon Rogawski. Like New. </p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="PostMainPage.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/copernican_rev.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>The Copernican Revolution</h3>
+							<p class="priceSmall">$17</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Thomas Kuhn. New. </p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/Books/tarika.jpg" alt="" />
+							<h4>Tarika Soni</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="TextbookPost5.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/cse100.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Data Structures & Algorithms in C++</h3>
+							<p class="priceSmall">$55</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Drozdek. For CSE 100. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
+				<a class="postLink" href="TextbookPost5.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/cse100.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Data Structures & Algorithms in C++</h3>
+							<p class="priceSmall">$55</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Drozdek. For CSE 100. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="" alt="" />
+							<h4>Seller Name</h4>
+						</div>
+					
+					</article>
+				</a>
+
+			</div>
+		
+	</section> 
+	
+    
 	
     <!-- FOOTER -->
     <div id="footer">

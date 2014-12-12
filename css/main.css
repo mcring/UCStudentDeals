@@ -32,7 +32,7 @@ p {
 	font-size:1.1rem;
 	line-height:1.4rem;
 	margin:1rem 0;
-	max-width:600px;
+	
 }
 h1 {
 	font-family:"exothin";
@@ -104,22 +104,47 @@ body>footer {
 	height:70px;
 }
 
-.head div {
-	width: 70%;
-	padding-left: 50px;
-	margin-left: 10px;
+.siteLogoName {
+	float:left;
+	height: 100%;
+	width: 60%;
+}
+.siteName {
+	width: 90%;
+	height: 100%;
+	float:right;
 }
 
+.logo {
+	float:left;
+	width: 100%;
+	max-height: 70px;
+}
 
-.brand {
-	float: left;
-	width:20%;
-	height:100%;
+.logoLink {
+	float:left;
+	width: 10%;
+}
+
+.headerButtonsDiv{
+	width: 15%;
+	height: 100%;
+	float: right;
+}
+
+.navIcon {
+	display: inline;
+	width: 80px;
+	height: 80px;
+	padding-left: 10px;
 }
 
 .content {
-	background-color: red;
 	display: inline-block;
+}
+
+.icon {
+	height: 60px;
 }
 
 
@@ -740,14 +765,20 @@ article a:hover {
 
 
 
-
-
-
+/*
+ *  CSS FOR HOME PAGE (index.html)
+ *
+ *
+ *
+ *
+ */
 
 .homePic{ 
 	width:200px; 
 	height:200px; 
 	background: url(../assets/images/i1.jpg) no-repeat; 
+	
+	background-size: cover;
 }
 	 
 .homeText{ 
@@ -800,30 +831,30 @@ article a:hover {
 }
 
 .welcomeHeader {	
-	background-color: red;
+	
 	padding:10px;
 	height:300px;
 	/*box-shadow:0 1px 10px #333;*/
 }
 
 .welcomeMainTitle{	
-	background-color: transparent;
+	
 	padding:10px;
 	width: 100%;
 	text-align: center;
 	font-family:"exoregular";
 	font-size:4.3rem;
-	line-height:1.8rem;
+	line-height:2.8rem;
 	/*box-shadow:0 1px 10px #333;*/
 }
 .welcomeFreeAndForSale{	
-	background-color: transparent;
+	
 	padding:10px;
 	width:100%;
 	text-align: center;
 	font-family:"exoregular";
 	font-size:4.3rem;
-	line-height:1.8rem;
+	line-height:2.8rem;
 	/*box-shadow:0 1px 10px #333;*/
 }
 
@@ -831,14 +862,111 @@ article a:hover {
 	display: inline-block;
 }
 
+.contentInner {
+	background-color: green;
+}
+
+
+#searchBig {
+	
+	padding-top: auto;
+	padding-bottom: auto;
+	margin-right: auto;
+	margin-left: auto;
+	width: 97%;
+	height: 30px;
+	border-radius: 4px;
+
+	float:left;
+}
+
+.bigSearchDiv {
+	width: 60%;
+	
+	margin-right: auto;
+	margin-left: auto;
+}
 
 
 
 
 
+/*
+ * CSS FOR THE PROFILE PAGE
+ *
+ *
+ *
+ */
 
 
+.profilePicBig {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	display:inline-block;
+	margin: 0 auto;
+}
 
+.profileHeader {
+	padding:10px;
+	height:400px;
+	width:98%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.profileName{	
+	
+	padding:10px;
+	width: 100%;
+	text-align: center;
+	font-family:"exoregular";
+	font-size:4.3rem;
+	line-height:2.8rem;
+	/*box-shadow:0 1px 10px #333;*/
+}
+
+.profileButtonsDiv {
+	width: 20%;
+	height: 60px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sellsBadge {
+	float: right;
+}
+
+.buysBadge {
+	float: left;
+}
+
+.buysSpan {
+	background-color: green;
+	border-radius: 10px;
+	font-family:"exoregular";
+	font-size:2.1rem;
+	line-height:1.4rem;
+}
+
+.sellsSpan {
+	background-color: red;
+	border-radius: 10px;
+	font-family:"exoregular";
+	font-size:2.1rem;
+	line-height:1.4rem;
+}
+
+
+.postingsLabel {
+	padding:10px;
+	width:100%;
+	text-align: left;
+	font-family:"exoblack";
+	font-size:2.3rem;
+	line-height:2.8rem;
+	display: inline-block;
+}
 
 
 
