@@ -763,7 +763,7 @@ article a:hover {
 }
 .footerNav nav li a {
 	color: #ccc;
-	display:block;
+	display:inline;
 	height:100%;
 	width:100%;
 }
