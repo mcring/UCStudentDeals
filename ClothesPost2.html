@@ -2,26 +2,29 @@
 <html lang="en">
   <head> 
     <meta charset="utf-8">
-    <title>UC Student Details</title>
+    <title>UC Student Deals</title>
     <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
 
     <!-- Base Stylsheets -->
     <link rel="stylesheet" href="css/reset.css" >
 	<link rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
 
-	
-    <!--  jQuery -->
-    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+
   </head>
   <body>
+
     <!-- HEADER -->
 
 	<header>
 		<section class="head">		
 				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
+					<img class="brand" src="assets/images/money.png" alt"" />
 				</a>
 				<div>
 					<p id="siteTitle"> UCSD Site Title</p>
@@ -47,41 +50,81 @@
 
 	<section class="results">
 		<div class="r">
-			<header>
-				<!-- Sort By Selector -->
-				<div class="sortByDiv">
-					<h2 class="sortByH">Sort By:  </h2>
-					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
-  						<option value="Textbooks1.html">Price: Low to High</option>
-  						<option value="Textbooks2.html">Price: High To Low</option>
-  						<option value="Textbooks3.html">Title: A-Z</option>
-					</select>
-				</div>
-				<div class="searchAndPageDiv">
-						<!-- Page Numbers -->
-					<div class="pageNumberDiv">
-						<h2 class="pageH">Page:</h2>
-						<ul>
-							<li><a href="#">1</a></li>
-							<!--<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">>></a></li>-->
-						</ul>
+			<div class="contentInner">	
+				<div class="postCreator">
+					<div>
+						<a href = "javascript:history.back()" class = "alignleft">Back to Clothes</a>
+						<a href = "#" class="alignright">Save</a>
+					</div>
+					<br>
+                    <ul>
+						<li>
+							<a class="fb" href="assets/images/i8.jpg" data-lightbox = "lightbox1">
+								<img class="categoryPicSmall pull-right" src="assets/images/i8.jpg" alt="assets/images/i8.jpg" />
+							</a>
+						</li>
+					</ul>
+
+					<p class="postTitle">Lots of clothes</p>						
+					<p class="priceSmall"><span id="spanGreen"> $OBO </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+                    <p class="postHead">Posted on: <span class = "date">December 9, 2014</span></p>
+					<p class="detailsP"> Dresses, shirts, shoes, belts, etc. Size Sm - M, 8 in shoes. Comment for more details! </p>
+                    
+
+					<!-- testing out comment section -->
+				    <br>
+                    
+                    <input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Comment">
+
+
+					<button onclick="makeOffer()" class = "actionButton" id = "messageButton">Offer</button>
+					<p id="offerMessage"></p>
+
+
+						    <script> 
+						    function makeOffer() {
+						    var offer = prompt("Your offer", "$");
+						    
+						    	if (offer != null) {
+						        	document.getElementById("offerMessage").innerHTML =
+						        	"You offered " + offer + "!";
+						    	}
+						    }
+						    </script>
+                    <div id="messageDiv">
+						<textarea id="messageTextArea" placeholder="Write a comment..."></textarea><br>
+						<input type="button" class="actionButton" id="messageButton" value="Send" onclick="location.href='TextbookPost3.html'">
 					</div>
 
-					<!-- Search Bar -->
-					<div class="search">
-						<input type="search" id="search" placeholder="Search..." />
-						<a href="#"><span class="icon"><i class="fa fa-search"></i></span></a>
-					</div>	
-				</div>
-			</header>
+					<div class = "commentSection">
 
-			<div id="CategoryTitle"> <p>Clothes</p> </div>
+
+						<hr>
+							<div class = "row comment">
+								<img class = "profilePicSmall" src="assets/images/p7.jpg" alt=""/>
+								<p> <span class="commentName"> Kara Maeda </span><span class="commentTime">12 minutes ago &nbsp; </span><span class="commentContent"> hi big, can I just have this for free lol</span>
+								
+
+							</div>
+						<hr>
+
+					</div>
+		
+					<br>
+					<br>
+
+									
+				</div>	
+			</div>
+		</div>
+	</section>
+
+
+	<section class = "results">
+		<div> <p class = "postTitle" id = "suggest">Suggestions</p> </div>
 
 			<div class="contentInner">
 			
-
 				<a class="postLink" href="ClothesPost1.html">
 					<article class="smallPost">
 						<img class="postPicSmall" src="assets/images/i3.jpg" alt="" />
@@ -95,24 +138,6 @@
 						<div class="postFooter"> 
 							<img class="profilePicSmall" src="assets/images/p3.jpg" alt="" />
 							<h4>Michael Hoffelt</h4>
-						</div>
-					
-					</article>
-				</a>
-
-				<a class="postLink" href="ClothesPost2.html">
-					<article class="smallPost">
-						<img class="postPicSmall" src="assets/images/i8.jpg" alt="" />
-
-						<div class="postHeader"> 
-							<h3>Lots of clothes</h3>
-							<p class="priceSmall"><span id="spanGreen"> $0B0 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
-						</div>
-						<hr>
-						<p class="descriptionSmall"> Dresses, shirts, shoes, belts, etc. Size Sm - M, 8 in shoes. Comment for more details!</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="assets/images/p13.jpg" alt="" />
-							<h4>Mio White</h4>
 						</div>
 					
 					</article>
@@ -160,6 +185,42 @@
 	</section>
 
 
+
+<script type="text/javascript">
+   function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+</script>
+
+  	<script type="text/javascript">
+        $(document).ready(function() {
+    $(".fb").fancybox({
+        modal       : false,
+        maxWidth    : 3000,
+        maxHeight   : 600,
+        fitToView   : false,
+        width       : '70%',
+        height      : '70%',
+        autoSize    : true,
+        closeClick  : true,
+        openEffect  : 'elastic',
+        closeEffect : 'elastic',
+        closeBtn    : true,
+        helpers     : {
+            title   : { type : 'inside' },
+            buttons : {},
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+});
+        </script>
 	
     <!-- FOOTER -->
     <div id="footer">
@@ -188,5 +249,13 @@
 			</section>
 		</div>
 	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+
   </body>
 </html>
