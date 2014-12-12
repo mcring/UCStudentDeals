@@ -2,8 +2,8 @@
 <html lang="en">
   <head> 
     <meta charset="utf-8">
-    <title>Usability Evaluation</title>
-    <meta name="author" content="Gian Costa, Megan Ring, and Andy">
+    <title>UC Student Details</title>
+    <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
 
     <!-- Base Stylsheets -->
     <link rel="stylesheet" href="css/reset.css" >
@@ -51,10 +51,10 @@
 				<!-- Sort By Selector -->
 				<div class="sortByDiv">
 					<h2 class="sortByH">Sort By:  </h2>
-					<select class="sortBySelector">
-  						<option>Price: Low to High</option>
-  						<option>Price: High To Low</option>
-  						<option></option>
+					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
+  						<option value="Textbooks1.html">Price: Low to High</option>
+  						<option value="Textbooks2.html">Price: High To Low</option>
+  						<option value="Textbooks3.html">Title: A-Z</option>
 					</select>
 				</div>
 				<div class="searchAndPageDiv">
@@ -63,9 +63,9 @@
 						<h2 class="pageH">Page:</h2>
 						<ul>
 							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
+							<!--<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
-							<li><a href="#">>></a></li>
+							<li><a href="#">>></a></li>-->
 						</ul>
 					</div>
 
@@ -84,38 +84,35 @@
 
 				<a class="postLink" href="RidesPost1.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="assets/images/Rides/ucsd_sb.jpg" alt="" />
+						<img class="postPicSmall" src="assets/images/i5.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>UCSD to Santa Barbara </h3>
-							<p class="priceSmall">$30</p>
+							<h3>UCSD to SB</h3>
+							<p class="priceSmall"><span id="spanGreen"> $gas </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall">Selling a ride from UCSD to Santa Barbara or anywhere along the route as long as its not too far out of the way.</p>
+						<p class="descriptionSmall"> Ride from UCSD to Santa Barbara on 12/20 leaving around noon</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="assets/images/Books/tarika.jpg" alt="" />
-							<h4>Tarika Soni</h4>
+							<img class="profilePicSmall" src="assets/images/p10.jpg" alt="" />
+							<h4>Megan Ring</h4>
 						</div>
 					
 					</article>
 				</a>
 
-
 				<a class="postLink" href="RidesPost2.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="assets/images/Rides/ucsd_sf.jpg" alt="" />
+						<img class="postPicSmall" src="assets/images/i6.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>UCSD to San Mateo</h3>
-							<p class="priceSmall">$40</p>
+							<h3>Airport ride</h3>
+							<p class="priceSmall"><span id="spanGreen"> $gas </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall">Selling rides to/from the Bay Area and anywhere along the way!</p>
+						<p class="descriptionSmall"> I’m driving 2 other people so I have 2 spots left. We are leaving 12/19 at 2pm</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Faraz Modirian</h4>
+							<img class="profilePicSmall" src="assets/images/p11.jpg" alt="" />
+							<h4>Althea Escalante</h4>
 						</div>
 					
 					</article>
@@ -124,43 +121,39 @@
 
 				<a class="postLink" href="RidesPost3.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="assets/images/Rides/oc_ucsd.png" alt="" />
+						<img class="postPicSmall" src="assets/images/i6.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Irvine to UCSD </h3>
-							<p class="priceSmall">$15</p>
+							<h3>airport ride</h3>
+							<p class="priceSmall"><span id="spanGreen"> $gas </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall">Selling a ride from Irvine (or anywhere in Orange County) back to UCSD.</p>
+						<p class="descriptionSmall"> 3 spots left in my car on 12/20 leaving in the morning. comment for details</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Megan Ring</h4>
+							<img class="profilePicSmall" src="assets/images/p12.jpg" alt="" />
+							<h4>Azze Ngo</h4>
 						</div>
 					
 					</article>
 				</a>
-
 
 				<a class="postLink" href="RidesPost4.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="assets/images/Rides/la_ucsd.png" alt="" />
+						<img class="postPicSmall" src="assets/images/i7.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>LA to UCSD </h3>
-							<p class="priceSmall">$25</p>
+							<h3>ride to bay area</h3>
+							<p class="priceSmall"><span id="spanGreen"> $10 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Selling a ride from LA, and anywhere along the way, to UCSD.</p>
+						<p class="descriptionSmall"> ride to bay area 4 spots in my car leaving on 12/20 any time and coming back 1/1 at night</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>April de Alday</h4>
+							<img class="profilePicSmall" src="assets/images/p5.jpg" alt="" />
+							<h4>Faraz Modirian</h4>
 						</div>
 					
 					</article>
 				</a>
-
 			</div>
 		</div>
 	</section>
