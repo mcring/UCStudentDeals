@@ -9,40 +9,12 @@
     <link rel="stylesheet" href="css/reset.css" >
 	<link rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-
-	
-        <!-- FancyBox -->
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link href="css/lightbox.css" rel="stylesheet" />
 
     <!-- JavaScript -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-
-        <!-- FancyBox -->
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
-    </script>
-
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5">
-    </script>
-
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js">
-    </script>
-
-
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5">
-    </script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6">
-    </script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7">
-    </script>
 
   </head>
   <body>
@@ -52,8 +24,7 @@
 	<header>
 		<section class="head">		
 				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
+					<img class="brand" src="assets/images/money.png" alt"" />
 				</a>
 				<div>
 					<p id="siteTitle"> UCSD Site Title</p>
@@ -81,7 +52,6 @@
 		<div class="r">
 			<div class="contentInner">	
 				<div class="postCreator">
-					
 					<div>
 						<a href = "javascript:history.back()" class = "alignleft">Back to Textbooks</a>
 						<a href = "#" class="alignright">Save</a>
@@ -89,33 +59,137 @@
 					<br>
                     <ul>
 						<li>
-							<a class="fb" href="assets/images/Books/T&E.jpg">
-								<img class="categoryPicSmall pull-right" src="assets/images/Books/T&E.jpg" alt="assets/images/Books/BooksCategory.jpg" />
+							<a class="fb" href="assets/images/Books/T&E.jpg" data-lightbox = "lightbox1">
+								<img class="categoryPicSmall pull-right" src="assets/images/Books/T&E.jpg" alt="assets/images/Books/T&E.jpg" />
 							</a>
 						</li>
 					</ul>
 
-                    <p class="postTitle">Traditions & Encounters</p>						
+					<p class="postTitle">Traditions & Encounters, 5th ed.</p>						
 					<p class="priceSmall"><span id="spanGreen"> $50 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Like New</p>
-                    
+
                     <p class="postHead">Posted on: <span class = "date">December 6, 2014</span></p>
-					<p class="detailsP"> Written by Bentley and Ziegler, 5th edition. Used for MMW series. Like New.</p>
+					<p class="detailsP"> by Bentley & Ziegler. Like New.</p>
+                    
 
-					<!-- Buttons -->
-					<input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Message">
-					<br>
-					<br>
+					<!-- testing out comment section -->
+				    <br>
+                    
+                    <input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Comment">
 
-					<!-- Message box that shows on button click -->
-					<div id="messageDiv">
-						<textarea id="messageTextArea" placeholder="Enter bid, question, or comment here..."></textarea><br>
-						<input type="button" class="actionButton" id="messageButton" value="Send Message" onclick="location.href='TextbookPost4.html'">
+
+					<button onclick="makeOffer()" class = "actionButton" id = "messageButton">Offer</button>
+					<p id="offerMessage"></p>
+
+
+						    <script> 
+						    function makeOffer() {
+						    var offer = prompt("Your offer", "$");
+						    
+						    	if (offer != null) {
+						        	document.getElementById("offerMessage").innerHTML =
+						        	"You offered " + offer + "!";
+						    	}
+						    }
+						    </script>
+                    <div id="messageDiv">
+						<textarea id="messageTextArea" placeholder="Write a comment..."></textarea><br>
+						<input type="button" class="actionButton" id="messageButton" value="Send" onclick="location.href='TextbookPost3.html'">
 					</div>
-					<br>				
+
+					<div class = "commentSection">
+
+
+						<hr>
+							<div class = "row comment">
+								<img class = "profilePicSmall" src="assets/images/p18.jpg" alt=""/>
+								<p> <span class="commentName"> Lauren Annamarie Roberts </span><span class="commentTime">1 day ago &nbsp; </span><span class="commentContent"> I HATE MMW UGH</span>
+							</div>
+						<hr>
+							<div class = "row comment">
+								<img class = "profilePicSmall" src="assets/images/p12.jpg" alt=""/>
+								<p> <span class="commentName"> Azze Ngo </span><span class="commentTime">2 days ago &nbsp; </span><span class="commentContent"> I definitely need this book!</span>
+							</div>
+						<hr>
+
+					</div>
+		
+					<br>
+					<br>
+
+									
 				</div>	
 			</div>
 		</div>
 	</section>
+
+
+	<section class = "results">
+		<div> <p class = "postTitle" id = "suggest">Suggestions</p> </div>
+
+			<div class="contentInner">
+			
+				<a class="postLink" href="TextbookPost4.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/T&E.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Traditions & Encounters, 5th ed.</h3>
+							<p class="priceSmall"><span id="spanGreen"> $50 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Like New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Bentley & Ziegler. Like New.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p5.jpg" alt="" />
+							<h4>Haley Church</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="TextbookPost5.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/cse100.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Data Structures & Algorithms in C++</h3>
+							<p class="priceSmall"><span id="spanGreen"> $55 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Drozdek. For CSE 100. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p17.jpg" alt="" />
+							<h4>Brandon Hakakian</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="TextbookPost6.html">
+					<article class="smallPost">
+						<img src="" class="favoriteButton"></img>
+						<img class="postPicSmall" src="assets/images/Books/calculus.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Calculus: Early Transcendentals </h3>
+							<p class="priceSmall"><span id="spanGreen"> $65 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Jon Rogawski. for all calc classes</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p16.jpg" alt="" />
+							<h4>Matt Lurie</h4>
+						</div>
+					
+					</article>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
 
 <script type="text/javascript">
    function toggle_visibility(id) {
@@ -180,5 +254,13 @@
 			</section>
 		</div>
 	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+
   </body>
 </html>
