@@ -2,8 +2,8 @@
 <html lang="en">
   <head> 
     <meta charset="utf-8">
-    <title>Usability Evaluation</title>
-    <meta name="author" content="Gian Costa, Megan Ring, and Andy">
+    <title>UC Student Details</title>
+    <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
 
     <!-- Base Stylsheets -->
     <link rel="stylesheet" href="css/reset.css" >
@@ -18,14 +18,22 @@
     <!-- HEADER -->
 
 	<header>
-		<section class="head">		
-				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
-				</a>
-				<div>
-					<p id="siteTitle"> UCSD Site Title</p>
-					<p id="siteBlurb"> Insert site blurb here</p>	
+		<section class="head">
+
+		        <div class="siteLogoName">		
+					<a class="logoLink" href="index.html">
+						<img class="logo" src="assets/images/money.png" alt"">
+						</img>
+					</a>
+					<div class="siteName">
+						<p id="siteTitle"> UCSD Site Title</p>
+					</div>
+				</div>
+					
+				<div class="headerButtonsDiv">
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-bell-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-envelope-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-user fa-2x"></i></span></a></div>
 				</div>
 		</section>
     </header>
@@ -42,8 +50,6 @@
 				</li>
 				<li><a href="SellerPage1.html">Looking To Sell?</a>
 				</li>
-				<li><a href="#">Looking to Trade?</a>
-				</li>
 			</ul></nav>
 	</section>
 
@@ -53,10 +59,10 @@
 				<!-- Sort By Selector -->
 				<div class="sortByDiv">
 					<h2 class="sortByH">Sort By:  </h2>
-					<select class="sortBySelector">
-  						<option>Price: Low to High</option>
-  						<option>Price: High To Low</option>
-  						<option></option>
+					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
+  						<option value="Textbooks1.html">Price: Low to High</option>
+  						<option value="Textbooks2.html">Price: High To Low</option>
+  						<option value="Textbooks3.html">Title: A-Z</option>
 					</select>
 				</div>
 				<div class="searchAndPageDiv">
@@ -65,9 +71,9 @@
 						<h2 class="pageH">Page:</h2>
 						<ul>
 							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
+							<!--<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
-							<li><a href="#">>></a></li>
+							<li><a href="#">>></a></li>-->
 						</ul>
 					</div>
 
@@ -84,104 +90,78 @@
 			<div class="contentInner">
 			
 
-				<a class="postLink" href="MiscellaneousPost1.html">
+				<a class="postLink" href="FurniturePost1.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i1.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Christmas Tree</h3>
+							<p class="priceSmall"><span id="spanGreen"> $10 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Like New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people. </p>
+						<p class="descriptionSmall"> Does anyone want a Christmas tree? Already packed in the box. Tree topper, two boxes of lights, ornaments, and tree for $10</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p1.jpg" alt="" />
+							<h4>GianCarlo Costa </h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="FurniturePost2.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i4.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Stuffed Panda </h3>
+							<p class="priceSmall"><span id="spanGreen"> $10 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">Selling a lil panda. Perfect for cuddling! I already have a few so I can share the love.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p4.jpg" alt="" />
+							<h4>Andie Romero</h4>
 						</div>
 					
 					</article>
 				</a>
 
 
-				<a class="postLink" href="MiscellaneousPost2.html">
+				<a class="postLink" href="FurniturePost3.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i18.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Lots of chips</h3>
+							<p class="priceSmall"><span id="spanGreen"> $1 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
+						<p class="descriptionSmall">I have a problem, please help. I have every kind of chips.</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p8.jpg" alt="" />
+							<h4>Karla Garibay</h4>
 						</div>
 					
 					</article>
 				</a>
 
-
-				<a class="postLink" href="MiscellaneousPost3.html">
+				<a class="postLink" href="FurniturePost4.html">
 					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
+						<img class="postPicSmall" src="assets/images/i19.jpg" alt="" />
 
 						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
+							<h3>Rainbow Slinky</h3>
+							<p class="priceSmall"><span id="spanGreen"> $15 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Like New</p>
 						</div>
 						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
+						<p class="descriptionSmall">this is really fun if you have stairs</p>
 						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
+							<img class="profilePicSmall" src="assets/images/p11.jpg" alt="" />
+							<h4>Althea Escalante </h4>
 						</div>
 					
 					</article>
 				</a>
-
-
-				<a class="postLink" href="MiscellaneousPost4.html">
-					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
-
-						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
-						</div>
-						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
-						</div>
-					
-					</article>
-				</a>
-
-				<a class="postLink" href="MiscellaneousPost5.html">
-					<article class="smallPost">
-						<img src="" class="favoriteButton"></img>
-						<img class="postPicSmall" src="#" alt="" />
-
-						<div class="postHeader"> 
-							<h3>Living Spaces Brown Leather Couch </h3>
-							<p class="priceSmall">$20</p>
-						</div>
-						<hr>
-						<p class="descriptionSmall"> Brand new couch big enough to seat 3 people.</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="" alt="" />
-							<h4>Seller Name</h4>
-						</div>
-					
-					</article>
-				</a>
-
 			</div>
 		</div>
 	</section>
