@@ -197,9 +197,9 @@ nav ul li:hover > ul {
 .frontbg h1 {
 	margin-top:140px;
 }
-/* results 
-.results>div { */
-.r {	
+/* results */
+.results>div { 
+/*.r {	*/
 	margin-top:10px;
 	overflow:hidden;
 	width:84%;
