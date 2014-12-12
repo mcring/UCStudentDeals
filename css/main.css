@@ -874,12 +874,14 @@ article a:hover {
 }
 #footer .address {
 	float:left;
-	width:300px;
+/*	width:300px;*/
+    width: 100%;
 	line-height:1.3rem;
 }
 .footerNav article {
-	float:right;
-	width:200px;
+	float:left;
+/*	width:200px;*/
+    min-width:100%;
 	margin:0 10px;
 }
 .footerNav article h3 {
