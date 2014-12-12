@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <title>UC Student Deals</title>
+    <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
+
+    <!-- Base Stylsheets -->
+    <link rel="stylesheet" href="css/reset.css" >
+	<link rel="stylesheet" href="css/main.css" >
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+	
+    <!--  jQuery -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+		<section class="head">
+
+		        <div class="siteLogoName">		
+					<a class="logoLink" href="index.html">
+						<img class="logo" src="assets/images/money.png" alt"">
+						</img>
+					</a>
+					<div class="siteName">
+						<p id="siteTitle"> UCSD Site Title</p>
+					</div>
+				</div>
+					
+				<div class="headerButtonsDiv">
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-bell-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-envelope-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-user fa-2x"></i></span></a></div>
+				</div>
+		</section>
+    </header>
+
+    <!-- MAIN -->
+	<section class="mainNav">	
+			<nav><ul>
+				<li><a href="index.html">Home</a>
+				</li>
+				<li><a href="ProfilePage1.html">Profile</a>
+				</li>
+				<li><a href="BuyerPage1.html">Looking To Buy?</a>
+				</li>
+				<li><a href="SellerPage1.html">Looking To Sell?</a>
+				</li>
+			</ul></nav>
+	</section>
+
+	<section class="results">
+		<div class="r">
+			<header>
+				<!-- Sort By Selector -->
+				<div class="sortByDiv">
+					<h2 class="sortByH">Sort By:  </h2>
+					<select class="sortBySelector" onchange="location = this.options[this.selectedIndex].value;">
+                        <option value="Tickets3.html">Title: A-Z</option>
+  						<option value="Tickets1.html">Price: Low to High</option>
+                        <option value="Tickets2.html">Price: High To Low</option>
+					</select>
+				</div>
+				<div class="searchAndPageDiv">
+						<!-- Page Numbers -->
+					<div class="pageNumberDiv">
+						<h2 class="pageH">Page:</h2>
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">>></a></li>
+						</ul>
+					</div>
+
+					<!-- Search Bar -->
+					<div class="search">
+						<input type="search" id="search" placeholder="Search..." />
+						<a href="#"><span class="icon"><i class="fa fa-search"></i></span></a>
+					</div>	
+				</div>
+			</header>
+
+			<div id="CategoryTitle"> <p>Tickets</p> </div>
+
+			<div class="contentInner">
+			
+                    
+				<a class="postLink" href="TicketsPost2.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i11.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>OMFG NYE 2-day pass</h3>
+<p class="priceSmall"><span id="spanGreen">$85</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>						</div>
+						<hr>
+						<p class="descriptionSmall"> dooo itttt message me!</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p14.jpg" alt="" />
+							<h4>April De Alday</h4>
+						</div>
+					
+					</article>
+				</a>
+                
+                
+				<a class="postLink" href="TicketsPost1.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i11.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>OMFG NYE 2 tickets </h3>
+							<p class="priceSmall"><span id="spanGreen">$80 each</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">I have 2 extra 2-day tickets! Pretty sick line up right?</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p4.jpg" alt="" />
+							<h4>Andie Romero</h4>
+						</div>
+					
+					</article>
+				</a>
+
+
+				<a class="postLink" href="TicketsPost3.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i12.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>RL Grime 2 tickets</h3>
+							<p class="priceSmall"><span id="spanGreen"> $20 each</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">Don't miss out on the Void tour!</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p15.jpg" alt="" />
+							<h4>Jenn Kim</h4>
+						</div>
+					
+					</article>
+				</a>
+                
+                
+                <a class="postLink" href="TicketsPost4.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i13.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>3-day Snowglobe pass</h3>
+							<p class="priceSmall"><span id="spanGreen"> $180</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">1 extra ticket, sick ass line up for 3 days in Tahoe.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p6.jpg" alt="" />
+							<h4>Marco Antonio</h4>
+						</div>
+					
+					</article>
+				</a>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	
+    <!-- FOOTER -->
+    <div id="footer">
+		<div class="wrap">
+			<section class="address">
+				<div class="brand"></div>
+				<address>
+					The University of Leicester, University Road, Leicester, LE1 7RH, United Kingdom
+				</address>
+			</section>
+			<section class="footerNav">
+				<article>
+					<h3>Quick Links</h3>
+					<nav><ul>
+							<li><a href="#" class="smallFont">Directories</a></li>
+							<li><a href="#" class="smallFont">A-Z Search</a></li>
+							<li><a href="#" class="smallFont">Departments</a></li>
+							<li><a href="#" class="smallFont">Maps & Directions</a></li>
+							<li><a href="#" class="smallFont">Legal</a></li>
+							<li><a href="#" class="smallFont">Help</a></li>
+						</ul>
+					</nav>
+				</article>
+			</section>
+			<section class="copyright">
+			</section>
+		</div>
+	</div>
+  </body>
+</html>

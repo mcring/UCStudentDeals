@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <title>UC Student Deals</title>
+    <meta name="author" content="Gian Costa, Megan Ring, and Andriana Romero">
+
+    <!-- Base Stylsheets -->
+    <link rel="stylesheet" href="css/reset.css" >
+	<link rel="stylesheet" href="css/main.css" >
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modern-business.js"></script>
+
+  </head>
+  <body>
+
+    <!-- HEADER -->
+
+    <header>
+		<section class="head">
+
+		        <div class="siteLogoName">		
+					<a class="logoLink" href="index.html">
+						<img class="logo" src="assets/images/money.png" alt"">
+						</img>
+					</a>
+					<div class="siteName">
+						<p id="siteTitle"> UCSD Site Title</p>
+					</div>
+				</div>
+					
+				<div class="headerButtonsDiv">
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-bell-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-envelope-o fa-2x"></i></span></a></div>
+					<div class="navIcon"><a href="ProfilePage1.html"><span class="icon"><i class="fa fa-user fa-2x"></i></span></a></div>
+				</div>
+		</section>
+    </header>
+
+    <!-- MAIN -->
+	<section class="mainNav">	
+			<nav><ul>
+				<li><a href="index.html">Home</a>
+				</li>
+				<li><a href="ProfilePage1.html">Profile</a>
+				</li>
+				<li><a href="BuyerPage1.html">Looking To Buy?</a>
+				</li>
+				<li><a href="SellerPage1.html">Looking To Sell?</a>
+				</li>
+			</ul></nav>
+	</section>
+
+	<section class="results">
+		<div class="r">
+			<div class="contentInner">	
+				<div class="postCreator">
+					<div>
+						<a href = "javascript:history.back()" class = "alignleft">Back to Tickets</a>
+						<a href = "#" class="alignright">Save</a>
+					</div>
+					<br>
+                    <ul>
+						<li>
+							<a class="fb" href="assets/images/i11.jpg" data-lightbox = "lightbox1">
+								<img class="categoryPicSmall pull-right" src="assets/images/i11.jpg" alt="assets/images/i11.jpg" />
+							</a>
+						</li>
+					</ul>
+
+					<p class="postTitle">OMFG NYE 2 tickets</p>						
+					<p class="priceSmall"><span id="spanGreen"> $80 each </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+                    <p class="postHead">Posted on: <span class = "date">December 11, 2014</span></p>
+					<p class="detailsP">I have 2 extra 2-day tickets! Pretty sick line up right? </p>
+                    
+
+					<!-- testing out comment section -->
+				    <br>
+                    
+                    <input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Comment">
+
+
+					<button onclick="makeOffer()" class = "actionButton" id = "messageButton">Offer</button>
+					<p id="offerMessage"></p>
+
+
+						    <script> 
+						    function makeOffer() {
+						    var offer = prompt("Your offer", "$");
+						    
+						    	if (offer != null) {
+						        	document.getElementById("offerMessage").innerHTML =
+						        	"You offered " + offer + "!";
+						    	}
+						    }
+						    </script>
+                    <div id="messageDiv">
+						<textarea id="messageTextArea" placeholder="Write a comment..."></textarea><br>
+						<input type="button" class="actionButton" id="messageButton" value="Send" onclick="location.href='TextbookPost3.html'">
+					</div>
+		
+					<br>
+					<br>
+
+									
+				</div>	
+			</div>
+		</div>
+	</section>
+
+
+	<section class = "results">
+		<div> <p class = "postTitle" id = "suggest">Suggestions</p> </div>
+
+			<div class="contentInner">
+			
+				<a class="postLink" href="TicketsPost2.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/i11.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>OMFG NYE 2-day pass</h3>
+							<p class="priceSmall"><span id="spanGreen"> $85 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall">doooo itttt message me! I can't go anymore so I have to sell my ticket :(</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p14.jpg" alt="" />
+							<h4>April De Alday</h4>
+						</div>
+					
+					</article>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+
+<script type="text/javascript">
+   function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+</script>
+
+  	<script type="text/javascript">
+        $(document).ready(function() {
+    $(".fb").fancybox({
+        modal       : false,
+        maxWidth    : 3000,
+        maxHeight   : 600,
+        fitToView   : false,
+        width       : '70%',
+        height      : '70%',
+        autoSize    : true,
+        closeClick  : true,
+        openEffect  : 'elastic',
+        closeEffect : 'elastic',
+        closeBtn    : true,
+        helpers     : {
+            title   : { type : 'inside' },
+            buttons : {},
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+});
+        </script>
+	
+    <!-- FOOTER -->
+    <div id="footer">
+		<div class="wrap">
+			<section class="address">
+				<div class="brand"></div>
+				<address>
+					The University of Leicester, University Road, Leicester, LE1 7RH, United Kingdom
+				</address>
+			</section>
+			<section class="footerNav">
+				<article>
+					<h3>Quick Links</h3>
+					<nav><ul>
+							<li><a href="#" class="smallFont">Directories</a></li>
+							<li><a href="#" class="smallFont">A-Z Search</a></li>
+							<li><a href="#" class="smallFont">Departments</a></li>
+							<li><a href="#" class="smallFont">Maps & Directions</a></li>
+							<li><a href="#" class="smallFont">Legal</a></li>
+							<li><a href="#" class="smallFont">Help</a></li>
+						</ul>
+					</nav>
+				</article>
+			</section>
+			<section class="copyright">
+			</section>
+		</div>
+	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+
+  </body>
+</html>
