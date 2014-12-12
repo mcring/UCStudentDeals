@@ -9,40 +9,12 @@
     <link rel="stylesheet" href="css/reset.css" >
 	<link rel="stylesheet" href="css/main.css" >
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-
-	
-        <!-- FancyBox -->
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link href="css/lightbox.css" rel="stylesheet" />
 
     <!-- JavaScript -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
-
-        <!-- FancyBox -->
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
-    </script>
-
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5">
-    </script>
-
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js">
-    </script>
-
-
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5">
-    </script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6">
-    </script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7">
-    </script>
 
   </head>
   <body>
@@ -52,8 +24,7 @@
 	<header>
 		<section class="head">		
 				<a href="index.html">
-					<img class="brand" src="assets/images/money.png" alt"">
-					</img>
+					<img class="brand" src="assets/images/money.png" alt"" />
 				</a>
 				<div>
 					<p id="siteTitle"> UCSD Site Title</p>
@@ -80,7 +51,7 @@
 	<section class="results">
 		<div class="r">
 			<div class="contentInner">	
-				<div class="postCreator">	
+				<div class="postCreator">
 					<div>
 						<a href = "javascript:history.back()" class = "alignleft">Back to Textbooks</a>
 						<a href = "#" class="alignright">Save</a>
@@ -88,33 +59,118 @@
 					<br>
                     <ul>
 						<li>
-							<a class="fb" href="assets/images/Books/publichealth.jpg">
-								<img class="categoryPicSmall pull-right" src="assets/images/Books/publichealth.jpg" alt="assets/images/Books/BooksCategory.jpg" />
+							<a class="fb" href="assets/images/Books/publichealth.jpg" data-lightbox = "lightbox1">
+								<img class="categoryPicSmall pull-right" src="assets/images/Books/publichealth.jpg" alt="assets/images/Books/publichealth.jpg" />
 							</a>
 						</li>
 					</ul>
 
-					<p class="postTitle">Public Health & Social Justice</p>						
-					<p class="priceSmall"><span id="spanGreen"> $60 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+					<p class="postTitle">Public Health & Social Justice </p>						
+					<p class="priceSmall"><span id="spanGreen"> $35 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+                    <p class="postHead">Posted on: <span class = "date">December 1, 2014</span></p>
+					<p class="detailsP">  by Donohoe.</p>
                     
-                    <p class="postHead">Posted on: <span class = "date">December 8, 2014</span></p>
-					<p class="detailsP">Written by Donohoe. Used for USP 144. New.</p>
 
-					<!-- Buttons -->
-					<input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Message">
-					<br>
-					<br>
+					<!-- testing out comment section -->
+				    <br>
+                    
+                    <input class="actionButton" id="messageButton" type="button" onclick="toggle_visibility('messageDiv')" value="Comment">
 
-					<!-- Message box that shows on button click -->
-					<div id="messageDiv">
-						<textarea id="messageTextArea" placeholder="Enter bid, question, or comment here..."></textarea><br>
-						<input type="button" class="actionButton" id="messageButton" value="Send Message" onclick="location.href='TextbookPost7.html'">
+
+					<button onclick="makeOffer()" class = "actionButton" id = "messageButton">Offer</button>
+					<p id="offerMessage"></p>
+
+
+						    <script> 
+						    function makeOffer() {
+						    var offer = prompt("Your offer", "$");
+						    
+						    	if (offer != null) {
+						        	document.getElementById("offerMessage").innerHTML =
+						        	"You offered " + offer + "!";
+						    	}
+						    }
+						    </script>
+                    <div id="messageDiv">
+						<textarea id="messageTextArea" placeholder="Write a comment..."></textarea><br>
+						<input type="button" class="actionButton" id="messageButton" value="Send" onclick="location.href='TextbookPost3.html'">
 					</div>
-					<br>				
+		
+					<br>
+					<br>
+
+									
 				</div>	
 			</div>
 		</div>
 	</section>
+
+
+	<section class = "results">
+		<div> <p class = "postTitle" id = "suggest">Suggestions</p> </div>
+
+			<div class="contentInner">
+			
+
+				<a class="postLink" href="TextbookPost1.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/Books/copernican_rev.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>The Copernican Revolution</h3>
+							<p class="priceSmall"><span id="spanGreen"> $17 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Thomas Kuhn.  </p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/Books/tarika.jpg" alt="" />
+							<h4>Tarika Soni</h4>
+						</div>
+					
+					</article>
+				</a>
+
+				<a class="postLink" href="TextbookPost2.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/Books/8a.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Introduction to Programming with Java</h3>
+							<p class="priceSmall"><span id="spanGreen"> $35 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Guzdial & Ericson. For CSE 8A/8B.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p4.jpg" alt="" />
+							<h4>Andie Romero</h4>
+						</div>
+					
+					</article>
+				</a>
+
+
+				<a class="postLink" href="TextbookPost3.html">
+					<article class="smallPost">
+						<img class="postPicSmall" src="assets/images/Books/cogs101A.jpg" alt="" />
+
+						<div class="postHeader"> 
+							<h3>Sensation and Perception</h3>
+							<p class="priceSmall"><span id="spanGreen"> $40 </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Used</p>
+						</div>
+						<hr>
+						<p class="descriptionSmall"> by Goldstein. 8th Edition. Used.</p>
+						<div class="postFooter"> 
+							<img class="profilePicSmall" src="assets/images/p3.jpg" alt="" />
+							<h4>Michael Hoffelt</h4>
+						</div>
+					
+					</article>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
 
 <script type="text/javascript">
    function toggle_visibility(id) {
@@ -179,5 +235,13 @@
 			</section>
 		</div>
 	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+
+
   </body>
 </html>

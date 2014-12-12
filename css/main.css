@@ -222,9 +222,9 @@ nav ul li:hover > ul {
 .frontbg h1 {
 	margin-top:140px;
 }
-/* results 
-.results>div { */
-.r {	
+/* results */
+.results>div { 
+/*.r {	*/
 	margin-top:10px;
 	overflow:hidden;
 	width:84%;
@@ -597,8 +597,8 @@ article a:hover {
 
 .categoryLink {
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 75%;
 }
 
 .contentInner a:hover {
@@ -1002,12 +1002,14 @@ article a:hover {
 }
 #footer .address {
 	float:left;
-	width:300px;
+/*	width:300px;*/
+    width: 100%;
 	line-height:1.3rem;
 }
 .footerNav article {
-	float:right;
-	width:200px;
+	float:left;
+/*	width:200px;*/
+    min-width:100%;
 	margin:0 10px;
 }
 .footerNav article h3 {
@@ -1025,7 +1027,7 @@ article a:hover {
 }
 .footerNav nav li a {
 	color: #ccc;
-	display:block;
+	display:inline;
 	height:100%;
 	width:100%;
 }
