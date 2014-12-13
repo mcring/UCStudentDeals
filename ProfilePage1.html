@@ -72,33 +72,80 @@
 			
 
             <a name="skipToYourPostings" id="skipToYourPostings"></a><!-- SKIP LINK ANCHOR -->
-            <p class="postingsLabel">Your Postings</p>
+            <p class="profileTitle">Your Postings and Offers</p>
 			<div class="contentInner">
 			
 
-				<a class="postLink" href="RidesPost1.html">
-					<article class="smallPost">
-						<img class="postPicSmall" src="assets/images/i5.jpg" alt="" />
+	<section class="results">
+		<div class="r">
+			<div class="contentInner">	
+				<div class="postCreator">
+					<div>
+						<a href = "javascript:history.back()" class = "alignleft">Back to Rides</a>
+						<a href = "#" class="alignright" onclick="myFunction()">Save</a>
+								<script>
+								function myFunction() {
+								    alert("Your item was saved to your profile!");
+								}
+								</script>
+					</div>
+					<br>
+                    <ul>
+						<li>
+							<a class="fb" href="assets/images/i5.jpg" data-lightbox = "lightbox1">
+								<img class="categoryPicSmall pull-right" src="assets/images/i5.jpg" alt="assets/images/i5.jpg" />
+							</a>
+						</li>
+					</ul>
 
-						<div class="postHeader"> 
-							<h3>UCSD to SB</h3>
-							<p class="priceSmall"><span id="spanGreen"> $gas </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
-						</div>
+					<p class="postTitle">UCSD to SB</p>						
+					<p class="priceSmall"><span id="spanGreen"> $gas </span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;New</p>
+                    <p class="postHead">Posted on: <span class = "date">December 10, 2014</span></p>
+					<p class="detailsP"> Ride from UCSD to Santa Barbara on 12/20 leaving around noon </p>
+                    
+
+					<!-- testing out comment section -->
+				    <br>
+                    
+					<button onclick="confirmOffer()" class = "actionButton messageButton">Confirm</button>
+					<button onclick="declineOffer()" class = "actionButton declineButton">Decline</button>
+					<p id="offerMessage"></p>
+
+								<script>
+								function confirmOffer() {
+								    alert("You confirmed Karla's offer for $20 for UCSD to SB!");
+								}
+								function declineOffer() {
+								    alert("You declined Karla's offer for $20 for UCSD to SB!");
+								}
+								</script>
+
+					<div class = "commentSection">
 						<hr>
-						<p class="descriptionSmall"> Ride from UCSD to Santa Barbara on 12/20 leaving around noon</p>
-						<div class="postFooter"> 
-							<img class="profilePicSmall" src="assets/images/p10.jpg" alt="" />
-							<h4>Megan Ring</h4>
-						</div>
-					
-					</article>
-				</a>
+							<div class = "row comment">
+								<img class = "profilePicSmall" src="assets/images/p8.jpg" alt=""/>
+								<p> <span class="commentName"> Karla Garibay </span><span class="commentTime">39 seconds ago &nbsp; </span><span class="commentContent"> made an offer of $20 for UCSD to SB. </span>
+								
+
+							</div>
+						<hr>
+
+					</div>
+		
+					<br>
+					<br>
+
+									
+				</div>	
+			</div>
+		</div>
+	</section>
 
 			</div>
 		
      
 			<a name="skipToYourSavedItems" id="skipToYourSavedItems"></a> <!-- SKIP LINK ANCHOR -->
-			<p class="postingsLabel">Your Saved Items</p>
+			<p class="profileTitle">Your Saved Items</p>
 			<div class="contentInner">
 
 				<a class="postLink" href="PostMainPage.html">
