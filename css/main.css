@@ -24,29 +24,34 @@ FONT2: CF Spaceship Regular
 	box-sizing:border-box !important;
 }
 body {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	background-image:url(../assets/patterns/cloth.png);
 }
 p {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.1rem;
 	line-height:1.4rem;
 	margin:1rem 0;
 	
 }
 h1 {
-	font-family:"exothin";
+    font-family: 'Graduate';
+/*	font-family:"exothin";*/
 	font-size:8rem;
 	color:#fff;
 	text-shadow:0 0 10px #333;
 }
 h2 {
-	font-family:"exoblack";
+/*	font-family:"exoblack";*/
+    font-family: 'Graduate';
 	font-size:1.4rem;
 	color:#333333;
 }
 h3 {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Graduate';
 	font-size:1.3rem;
 	line-height:1.8rem;
 	color:#000000;
@@ -1052,7 +1057,8 @@ article a:hover {
 	padding:10px;
 	width: 100%;
 	text-align: center;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Graduate';
 	font-size:4.3rem;
 	line-height:2.8rem;
 	/*box-shadow:0 1px 10px #333;*/
@@ -1062,9 +1068,10 @@ article a:hover {
 	padding:10px;
 	width:100%;
 	text-align: center;
-	font-family:"exoregular";
-	font-size:4.3rem;
-	line-height:2.8rem;
+/*	font-family:"exoregular";*/
+    font-family: 'Graduate';
+	font-size:3.3rem;
+	line-height:1.8rem;
 	/*box-shadow:0 1px 10px #333;*/
 }
 
@@ -1187,34 +1194,11 @@ article a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 #footer {
 	padding-top:20px;
 	color:#fff;
-
+/*    background-color: #2B67DE;        */
 }
 #footer .address {
 	float:left;
