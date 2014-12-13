@@ -198,7 +198,8 @@ nav ul {
 }
 nav > ul > li {	
 	text-decoration:none;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.0rem;
 	background-color: #2B67DE;
 
@@ -291,7 +292,8 @@ nav ul li:hover > ul {
 	padding: 0px 0px 0px 0px;
 	width: 100%;
 	height: 100%;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:26px;
 
 }
@@ -313,7 +315,8 @@ nav ul li:hover > ul {
 
 .sortByH {
 	width: 25%;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.0rem;
 	line-height:1.8rem;
 	color:#CCDDFF;
@@ -333,7 +336,8 @@ nav ul li:hover > ul {
 }
 
 .pageNumberDiv li a{
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.0rem;
 	line-height:1.8rem;
 	color:#000000;
@@ -366,7 +370,8 @@ nav ul li:hover > ul {
 }
 
 .pageH {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.0rem;
 	line-height:1.8rem;
 	color:#000000;
@@ -465,7 +470,8 @@ nav ul li:hover > ul {
 }
 
 .descriptionSmall {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:0.8rem;
 	line-height:1.4rem;
 	margin:1rem 0;
@@ -489,7 +495,8 @@ nav ul li:hover > ul {
 	float:left;
 }
 .postFooter h4 {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.0rem;
 	line-height:1.4rem;
 	margin:1rem 0;
@@ -521,7 +528,8 @@ nav ul li:hover > ul {
 }
 
 .commentP {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:0.9rem;
 	line-height: 70%;
 }
@@ -531,20 +539,23 @@ nav ul li:hover > ul {
 }
 
 .commentName {
-	font-family:"exoblack";
+/*	font-family:"exoblack";*/
+    font-family: 'Roboto Slab':700, serif;
 	font-size:0.9rem;
 	line-height: 70%;
 }
 
 .commentTime {
-	font-family:"exothin";
+/*	font-family:"exothin";*/
+    font-family: 'Roboto Slab':300, serif;
 	color:#333333;
 	font-size:0.9rem;
 	line-height: 70%;
 }
 
 .commentContent {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab':400, serif;
 	font-size:0.6rem;
 	line-height: 70%;
 }
@@ -592,9 +603,9 @@ nav ul li:hover > ul {
     background-color: rgba(255,255,255,0.3);
 }
 
-
-
-
+.profileInline {
+    width:100%;
+}
 
 
 article a:hover {
@@ -670,7 +681,8 @@ article a:hover {
 
 
 .postHead {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:1.2rem;
 	line-height:1.8rem;
 	color:#000000;
@@ -682,7 +694,8 @@ article a:hover {
 }
 
 .postTitle {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:2.5rem;
 /*	line-height:1.8rem;*/
     line-height: 100%;
@@ -723,7 +736,8 @@ article a:hover {
 
 
 .detailsP {
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:0.9rem;
 	line-height:1.4rem;
 	margin:1rem 0;
@@ -770,7 +784,8 @@ article a:hover {
 	width: 80px;
 	height: 30px;
 	border-radius: 5px;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 }
 
 #messageTextArea {
@@ -932,7 +947,8 @@ article a:hover {
 
 .homeText p { 
 	text-align: center;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:4.3rem;
 	line-height:1.8rem;
 	color: red;
@@ -1187,7 +1203,8 @@ article a:hover {
 	padding:10px;
 	width: 100%;
 	text-align: center;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Graduate', 'Roboto Slab', serif;
 	font-size:4.3rem;
 	line-height:2.8rem;
 	/*box-shadow:0 1px 10px #333;*/
@@ -1211,7 +1228,8 @@ article a:hover {
 .buysSpan {
 	background-color: green;
 	border-radius: 10px;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:2.1rem;
 	line-height:1.4rem;
 }
@@ -1219,7 +1237,8 @@ article a:hover {
 .sellsSpan {
 	background-color: red;
 	border-radius: 10px;
-	font-family:"exoregular";
+/*	font-family:"exoregular";*/
+    font-family: 'Roboto Slab', serif;
 	font-size:2.1rem;
 	line-height:1.4rem;
 }
@@ -1229,7 +1248,8 @@ article a:hover {
 	padding:10px;
 	width:100%;
 	text-align: left;
-	font-family:"exoblack";
+/*	font-family:"exoblack";*/
+    font-family: 'Roboto Slab':700, serif;
 	font-size:2.3rem;
 	line-height:2.8rem;
 	display: inline-block;
@@ -1255,11 +1275,12 @@ article a:hover {
 /*    background-color: #2B67DE;        */
 }
 #footer .address {
-	float:left;
+	float:center;
 /*	width:300px;*/
     width: 100%;
 	line-height:1.3rem;
 }
+
 .footerNav article {
 	float:left;
 /*	width:200px;*/
@@ -1273,6 +1294,11 @@ article a:hover {
 	font-size:1rem;
 	border-bottom:1px solid #fff;
 	margin-bottom:10px;
+}
+.footerNav p {
+    align-content: center;
+    text-align: center;
+    color:black;
 }
 .footerNav nav li {
 	float:none;
