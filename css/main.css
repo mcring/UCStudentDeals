@@ -607,6 +607,7 @@ nav ul li:hover > ul {
     width:100%;
 }
 
+
 article a:hover {
 	color:#333;
 }
@@ -757,10 +758,18 @@ article a:hover {
 	background-color: #E3CF57;
 }
 
-#messageButton {
+.messageButton {
 	background-color: green;
 }
-#messageButton:hover {
+
+.declineButton {
+	background-color: red;
+}
+.messageButton:hover {
+	background-color: #526F35;
+}
+
+.declineButton:hover {
 	background-color: #526F35;
 }
 
@@ -1244,6 +1253,16 @@ article a:hover {
 	font-size:2.3rem;
 	line-height:2.8rem;
 	display: inline-block;
+}
+
+.profileTitle{
+	padding:10px;
+	width:100%;
+	text-align: center;
+	font-family:"exoblack";
+	font-size:2.3rem;
+	line-height:2.8rem;
+	display: inline-block;	
 }
 
 
