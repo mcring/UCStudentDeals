@@ -772,14 +772,105 @@ article a:hover {
  *
  *
  */
-
-.homePic{ 
+/* Home page Icons */
+.homePic1{ 
 	width:200px; 
 	height:200px; 
-	background: url(../assets/images/i1.jpg) no-repeat; 
-	
+	background: url(../assets/images/Books/cogs101A.jpg) no-repeat; 	
 	background-size: cover;
 }
+.homePic2{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i4.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic3{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i3.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic4{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/Books/8a.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic5{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i19.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic6{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i15.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic7{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i12.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic8{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i18.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic9{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i10.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic10{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i5.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic11{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i8.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic12{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i17.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic13{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i1.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic14{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i11.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic15{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/i7.jpg) no-repeat; 	
+	background-size: cover;
+}
+.homePic16{ 
+	width:200px; 
+	height:200px; 
+	background: url(../assets/images/Books/genetics2.jpg) no-repeat; 	
+	background-size: cover;
+}
+
+
 	 
 .homeText{ 
 	width:200px; 
@@ -800,15 +891,134 @@ article a:hover {
 	line-height: 150px;
 } 
 
-.homePic:hover .homeText { 
+.homePic1:hover .homeText { 
 	opacity:0.6; 
 	text-align:center; 
 	color:#000000; 
 	
 	font-family:"Times New Roman", Times, serif; 
-	padding:30px; }
+	padding:30px;
+}
+.homePic2:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
 } 
-
+.homePic3:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic4:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic5:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic6:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic7:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic8:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic9:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic10:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic11:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic12:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic13:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic14:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic15:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
+.homePic16:hover .homeText { 
+	opacity:0.6; 
+	text-align:center; 
+	color:#000000; 
+	
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px;
+} 
 .homeCategory {
 	width:30%;
 	height:100%;
@@ -862,8 +1072,14 @@ article a:hover {
 	display: inline-block;
 }
 
-.contentInner {
-
+.contentInner2 {
+	width:97%;
+    height:100%;
+	float:left;
+	padding:20px;
+	margin:10px;
+	box-shadow:0 1px 10px #333;
+    background-color: rgba(255,255,255,0.3);
 }
 
 
